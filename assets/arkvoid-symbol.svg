@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
-  <title id="title">Arkvoid symbol</title>
-  <desc id="desc">A threshold arch enclosing a world core, crossed by a horizon line.</desc>
-  <defs>
-    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#e6c6a0"/>
-      <stop offset="0.52" stop-color="#bd805d"/>
-      <stop offset="1" stop-color="#718b70"/>
-    </linearGradient>
-  </defs>
-  <path d="M18 77V39C18 20 30 10 48 10s30 10 30 29v38" fill="none" stroke="url(#metal)" stroke-width="4" stroke-linecap="square"/>
-  <path d="M30 77V42c0-12 7-20 18-20s18 8 18 20v35" fill="none" stroke="#eee8dc" stroke-opacity=".48" stroke-width="1.2"/>
-  <path d="M8 54H88" fill="none" stroke="#eee8dc" stroke-opacity=".84" stroke-width="2"/>
-  <circle cx="48" cy="54" r="7.5" fill="#171a16" stroke="#d7a17c" stroke-width="2"/>
-  <path d="M44 54h8M48 50v8" stroke="#e7d3b9" stroke-width="1.1" stroke-linecap="round"/>
-  <path d="M26 86h44" stroke="#70866a" stroke-width="2" stroke-linecap="square"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title"><title id="title">Arkvoid emblem</title><rect width="64" height="64" fill="none"/><path d="M13 53V31C13 16 21 8 32 8s19 8 19 23v22" fill="none" stroke="#bd7b59" stroke-width="2.4"/><path d="M21 53V32c0-9 4-15 11-15s11 6 11 15v21" fill="none" stroke="#d8c9ad" stroke-width="1.3"/><path d="M7 42h50M18 53h28" fill="none" stroke="#d8c9ad" stroke-width="1.2"/><circle cx="32" cy="36" r="5.2" fill="none" stroke="#bd7b59" stroke-width="1.5"/><circle cx="32" cy="36" r="1.6" fill="#d8c9ad"/></svg>
