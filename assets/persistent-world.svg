@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 900" fill="none" role="img" aria-labelledby="worldTitle worldDesc">
+  <title id="worldTitle">Arkvoid — a persistent world, in motion</title>
+  <desc id="worldDesc">An original, layered illustration of a floating mountain world, a distant citadel, orbit lines, and a small traveler. All elements are vector artwork.</desc>
+  <style>
+    @keyframes far-drift { 0% { transform: translateX(-22px); } 100% { transform: translateX(46px); } }
+    @keyframes mist-travel { 0% { transform: translateX(-95px) translateY(2px); } 100% { transform: translateX(95px) translateY(-7px); } }
+    @keyframes island-breathe { 0% { transform: translate(-7px, 4px) rotate(-.28deg); } 100% { transform: translate(10px, -8px) rotate(.22deg); } }
+    @keyframes light-orbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes glow-pulse { 0%, 100% { opacity: .72; } 50% { opacity: 1; } }
+    @keyframes water-flow { to { stroke-dashoffset: -108; } }
+    .far-clouds { animation: far-drift 38s ease-in-out infinite alternate; }
+    .distant-world { animation: far-drift 48s ease-in-out infinite alternate-reverse; transform-origin: 560px 430px; }
+    .mist-back { animation: mist-travel 36s ease-in-out infinite alternate; }
+    .mist-front { animation: mist-travel 42s ease-in-out infinite alternate-reverse; }
+    .front-island { animation: island-breathe 22s ease-in-out infinite alternate; transform-origin: 560px 700px; }
+    .orbital-core { transform-origin: 740px 214px; animation: glow-pulse 8s ease-in-out infinite; }
+    .orbit-system { transform-origin: 560px 450px; animation: light-orbit 130s linear infinite; }
+    .river-flow { animation: water-flow 16s linear infinite; }
+    .foreground-embers { animation: glow-pulse 7s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="sky" x1="560" y1="40" x2="560" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20271f"/>
+      <stop offset=".48" stop-color="#252a22"/>
+      <stop offset="1" stop-color="#141713"/>
+    </linearGradient>
+    <linearGradient id="haze" x1="270" y1="300" x2="850" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8da18b" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#dbc2a0" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#bd805d" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="355" y1="415" x2="730" y2="735" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#647765"/>
+      <stop offset=".48" stop-color="#384538"/>
+      <stop offset="1" stop-color="#1b211b"/>
+    </linearGradient>
+    <linearGradient id="rockFace" x1="470" y1="590" x2="730" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#596b58"/>
+      <stop offset="1" stop-color="#1b201a"/>
+    </linearGradient>
+    <linearGradient id="river" x1="400" y1="630" x2="745" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ddc8a2"/>
+      <stop offset=".45" stop-color="#b87d59"/>
+      <stop offset="1" stop-color="#718b71"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f0d3ac"/>
+      <stop offset=".5" stop-color="#c58b67"/>
+      <stop offset="1" stop-color="#778f74"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0" cy="0" r="1" gradientTransform="translate(740 214) rotate(90) scale(186)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d5b18a" stop-opacity=".27"/>
+      <stop offset="1" stop-color="#d5b18a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur20" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="blur8" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
+    <pattern id="contours" width="48" height="34" patternUnits="userSpaceOnUse">
+      <path d="M-12 25C0 12 15 12 28 22S51 31 61 17" stroke="#d7c4a5" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1120" height="900" rx="28" fill="url(#sky)"/>
+  <ellipse cx="740" cy="214" rx="280" ry="255" fill="url(#sunGlow)"/>
+  <g opacity=".46" stroke="#d5b994" stroke-width="1">
+    <ellipse cx="660" cy="333" rx="375" ry="245" transform="rotate(-19 660 333)" stroke-dasharray="2 10"/>
+    <ellipse cx="654" cy="330" rx="447" ry="300" transform="rotate(-19 654 330)" stroke-opacity=".23"/>
+    <path d="M130 243C370 101 770 86 1000 257" stroke-opacity=".18"/>
+    <path d="M112 281C350 152 770 137 1022 293" stroke-opacity=".12"/>
+  </g>
+  <g class="orbital-core">
+    <circle cx="740" cy="214" r="104" fill="#c5a078" fill-opacity=".08"/>
+    <circle cx="740" cy="214" r="76" stroke="#d8c3a3" stroke-opacity=".58" stroke-width="1.2"/>
+    <circle cx="740" cy="214" r="61" fill="#d1b18b" fill-opacity=".10" stroke="#d9c6a8" stroke-opacity=".18"/>
+    <path d="M740 137V291M663 214H817" stroke="#d8c5a9" stroke-opacity=".12"/>
+    <circle cx="740" cy="214" r="8" fill="#e1c6a1"/>
+    <circle cx="740" cy="214" r="20" stroke="#e1c6a1" stroke-opacity=".25"/>
+  </g>
+
+  <g class="far-clouds" fill="#a5b2a0" opacity=".11" filter="url(#blur20)">
+    <path d="M-80 410C68 341 157 420 250 396s170-60 283-17 166 24 259 4 217 9 398 81v115H-80V410Z"/>
+    <path d="M-90 518c145-88 230-47 338-72s193-14 282 24 197 27 288-6 212-9 392 37v119H-90V518Z"/>
+  </g>
+
+  <g class="distant-world">
+    <path d="M63 531 143 436l37 25 63-88 70 91 49-28 84 78 79-16 54 65H63Z" fill="#59675a" fill-opacity=".45"/>
+    <path d="m144 437 36 24 63-88 35 45-34-18-35 48-35-24-31 13Z" fill="#c6b89b" fill-opacity=".22"/>
+    <path d="m315 463 38-27 84 78 27-6 31 35H314Z" fill="#899a85" fill-opacity=".25"/>
+    <path d="M740 480 820 376l38 21 74-103 69 97 48-30 70 59v91H740Z" fill="#455646" fill-opacity=".46"/>
+    <path d="m858 397 74-103 42 58-41-17-40 51-35-18Z" fill="#d3c2a4" fill-opacity=".20"/>
+    <path d="m970 391 31-43 48 61-30-19-21 14Z" fill="#d3c2a4" fill-opacity=".14"/>
+  </g>
+
+  <g class="mist-bank mist-back">
+    <path d="M-80 534C30 487 87 514 170 491s129 2 191 22 109 8 180-7 121 31 203 9 129-33 230 0 122 20 223-8v114H-80V534Z" fill="url(#haze)" filter="url(#blur8)"/>
+    <path d="M-40 565c133-35 184 11 286-10s145-20 215-2 115 1 198-12 120 22 206 12 175-8 295 14" stroke="#d7c4a6" stroke-opacity=".18" stroke-width="2"/>
+  </g>
+
+  <g class="citadel">
+    <!-- Floating upper terraces -->
+    <path d="M342 495 475 410 685 415 817 491 700 539 477 536Z" fill="#344337" stroke="#92a18a" stroke-opacity=".55" stroke-width="1.4"/>
+    <path d="M342 495 475 522 700 527 817 491 700 564 473 557Z" fill="#242d24"/>
+    <path d="M376 488 481 431 674 434 780 487 687 511 477 511Z" fill="#576957" fill-opacity=".45"/>
+    <path d="M395 487 484 447 673 447 761 487" stroke="#c7b496" stroke-opacity=".45" stroke-width="1.6"/>
+    <!-- central keep -->
+    <path d="M500 431V354h38v77m38-2V322h44v110m39-2v-67h30v67" fill="#4b5b49" stroke="#c5b18e" stroke-opacity=".55" stroke-width="1.4"/>
+    <path d="m493 354 26-44 27 44Z" fill="#ba8966" stroke="#e1c7a4" stroke-opacity=".65" stroke-width="1"/>
+    <path d="m570 322 28-59 30 59Z" fill="#c38d68" stroke="#e1c7a4" stroke-opacity=".74" stroke-width="1.2"/>
+    <path d="m609 362 24-41 24 41Z" fill="#9b7557" stroke="#d9c2a2" stroke-opacity=".55"/>
+    <path d="M509 432h19v-33h-19Zm49 0h14v-43h-14Zm61 0h15v-48h-15Zm44 0h12v-32h-12Z" fill="#d9b58c" fill-opacity=".7"/>
+    <path d="M590 432v-37m-7 18h14" stroke="#20271f" stroke-width="3"/>
+    <!-- left spire -->
+    <path d="M431 458V389h24v69m-31-69 19-33 19 33Z" fill="#405141" stroke="#c6b28f" stroke-opacity=".62"/>
+    <path d="M438 458v-27h11v27" fill="#d6b58d" fill-opacity=".58"/>
+    <!-- right spire -->
+    <path d="M690 451v-80h25v80m-31-80 18-34 19 34Z" fill="#3b4a3b" stroke="#c6b28f" stroke-opacity=".62"/>
+    <path d="M698 451v-27h10v27" fill="#d6b58d" fill-opacity=".58"/>
+    <!-- terrace walkways and lights -->
+    <path d="M414 486 477 503h212l66-20M451 467l31 20m206-20-24 22" stroke="#d8bd98" stroke-opacity=".5" stroke-width="1.4"/>
+    <g fill="#e5c39a"><circle cx="457" cy="475" r="2.2"/><circle cx="492" cy="489" r="2.2"/><circle cx="665" cy="487" r="2.2"/><circle cx="722" cy="471" r="2.2"/></g>
+    <path d="M590 265V247m-7 9h14" stroke="#e3c69e" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+
+  <g class="front-island">
+    <!-- top ground -->
+    <path d="M157 615 275 551 404 570 506 526 625 549 755 527 902 589 1008 649 881 702 759 712 632 751 492 722 354 710 238 667Z" fill="url(#stone)" stroke="#879985" stroke-opacity=".7" stroke-width="1.6"/>
+    <path d="M157 615 275 551 404 570 506 526 625 549 755 527 902 589 1008 649 881 702 759 712 632 751 492 722 354 710 238 667Z" fill="url(#contours)"/>
+    <!-- moss and path -->
+    <path d="M199 614 282 575 381 592 480 552 590 574 719 552 865 604 931 641 851 676 747 680 630 718 504 689 374 681 270 650Z" fill="#778a72" fill-opacity=".21"/>
+    <path d="M456 561c-9 45 18 65 65 74s55 28 48 56-31 24-41 45" stroke="#b79a75" stroke-opacity=".5" stroke-width="9" stroke-linecap="round"/>
+    <path d="M456 561c-9 45 18 65 65 74s55 28 48 56-31 24-41 45" stroke="url(#river)" stroke-width="2.3" stroke-linecap="round" stroke-dasharray="15 12" class="river-flow"/>
+    <path d="M157 615 238 667 354 710 492 722 632 751 759 712 881 702 1008 649" stroke="#c5a77f" stroke-opacity=".31" stroke-width="1.4"/>
+    <!-- layered underside, enormous floating land mass -->
+    <path d="M238 667 354 710 492 722 632 751 759 712 881 702 929 729 813 791 714 825 630 852 542 818 435 803 334 755Z" fill="url(#rockFace)" stroke="#758674" stroke-opacity=".42" stroke-width="1.2"/>
+    <path d="M334 755 435 803 542 818 630 852 714 825 813 791 754 844 674 872 620 888 553 860 475 849 402 815Z" fill="#202720"/>
+    <path d="M280 690 395 742 500 752 617 786 721 754 852 724" stroke="#aeb9a0" stroke-opacity=".16" stroke-width="1.2"/>
+    <path d="M354 710 435 803 475 849M492 722 542 818 553 860M632 751 630 852 620 888M759 712 714 825 674 872M881 702 813 791" stroke="#a6b39c" stroke-opacity=".16" stroke-width="1.1"/>
+    <!-- great roots / struts -->
+    <path d="M344 707 322 748 351 766 384 737M723 710 741 757 722 785M861 702 875 730 849 750" stroke="#4e614f" stroke-width="11" stroke-linecap="round"/>
+    <!-- small stone structures -->
+    <path d="M757 570v-27h14v27m-19-27 12-18 13 18Z" fill="#29342a" stroke="#a9b19b" stroke-opacity=".4"/>
+    <path d="M793 584v-18h10v18m-14-18 9-13 9 13Z" fill="#29342a" stroke="#a9b19b" stroke-opacity=".4"/>
+    <!-- trees -->
+    <g class="tree-line" stroke-linecap="round">
+      <path d="M300 594v-47m0 22-16-13m16 4 13-18m-13 39-11-8" stroke="#20291f" stroke-width="4"/>
+      <path d="M279 563q21-30 40-2q-6 18-20 16q-16 0-20-14Z" fill="#172019"/>
+      <path d="M376 590v-39m0 19-13-13m13 8 13-20" stroke="#1e2a20" stroke-width="3.5"/>
+      <path d="M359 559q17-24 33 1q-5 13-18 14q-12 0-15-15Z" fill="#202b21"/>
+      <path d="M846 595v-47m0 21-14-13m14 6 15-20" stroke="#1e2a20" stroke-width="4"/>
+      <path d="M826 564q20-28 40 1q-6 16-20 16q-15 0-20-17Z" fill="#172019"/>
+      <path d="M889 622v-35m0 18-10-9m10 6 12-16" stroke="#1e2a20" stroke-width="3"/>
+      <path d="M875 597q15-21 29 2q-4 12-14 12q-12 0-15-14Z" fill="#1c261e"/>
+    </g>
+    <!-- tiny traveler for scale -->
+    <g class="traveler" transform="translate(414 577)">
+      <ellipse cx="8" cy="65" rx="19" ry="4" fill="#10140f" fill-opacity=".46"/>
+      <path d="M4 23q-1-8 5-11q7 2 6 11l7 19-8 5-8-16-8 14-7-4 9-22Z" fill="#d2bd9e"/>
+      <path d="M5 27 0 40l-13 8 3 5 17-6 8-14" fill="#9c7658"/>
+      <path d="M7 43 3 58l-8 6 1 4 13-4 8-17" fill="#bd8e67"/>
+      <circle cx="10" cy="8" r="6" fill="#dcc6a5"/>
+      <path d="M4 8q2-8 10-4l3 5-13 1Z" fill="#1c241c"/>
+      <path d="M-3 21-13 46l8 5 13-24" fill="#334536"/>
+      <path d="M-13 46l-5 7 14 3 5-7Z" fill="#c9a37b"/>
+    </g>
+  </g>
+
+  <g class="mist-front" fill="#b4bca7" opacity=".16" filter="url(#blur8)">
+    <path d="M-120 639C40 594 132 643 235 620s170 19 244 28 169-20 258-9 170 40 270 14 178 18 255 29v128H-120V639Z"/>
+  </g>
+  <g class="mist-ribbon" stroke="#cfc5ad" stroke-opacity=".33" stroke-width="1.3">
+    <path d="M-60 620C88 582 164 632 281 609s170 28 271 28 161-28 260-9 175 34 350 9"/>
+    <path d="M-60 646C88 608 164 658 281 635s170 28 271 28 161-28 260-9 175 34 350 9" stroke-opacity=".14"/>
+  </g>
+
+  <!-- monumental orbit / navigation marks -->
+  <g class="orbit-system" stroke="#cfaa80" stroke-width="1.15" stroke-opacity=".58">
+    <path d="M136 326C270 200 700 142 948 296" stroke-dasharray="2 8"/>
+    <path d="M204 750C400 857 762 856 1002 690" stroke-opacity=".25" stroke-dasharray="3 9"/>
+    <circle cx="948" cy="296" r="4" fill="#d2ac85" stroke="none"/>
+    <circle cx="136" cy="326" r="3" fill="#8da18b" stroke="none"/>
+  </g>
+  <g class="foreground-embers" fill="#d6b18b">
+    <circle cx="280" cy="433" r="1.7"/><circle cx="860" cy="420" r="1.8"/><circle cx="909" cy="525" r="1.4"/><circle cx="353" cy="481" r="1.2"/><circle cx="676" cy="612" r="1.6"/><circle cx="550" cy="320" r="1.4"/>
+  </g>
+  <rect x=".5" y=".5" width="1119" height="899" rx="27.5" stroke="#d9c4a3" stroke-opacity=".16"/>
+</svg>
