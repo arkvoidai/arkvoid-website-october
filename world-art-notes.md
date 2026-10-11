@@ -1,3 +1,0 @@
-# World artwork
-
-The current production hero uses `assets/persistent-world.svg`, a lightweight vector illustration. The October site redesign includes a cinematic fantasy-world art direction, but generated raster artwork should be optimized and committed as WebP before being wired into the page. This note is a placeholder for review and avoids putting large binary data in GitHub through a text-only action.
