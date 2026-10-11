@@ -1,25 +1,225 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#171713"><meta name="description" content="Arkvoid is building toward living digital worlds where characters remember, choices matter, and history persists.">
-<meta property="og:title" content="Arkvoid | Worlds with a past"><meta property="og:description" content="A new kind of world. A past that stays. Step inside the first experiment.">
-<link rel="icon" href="assets/arkvoid-symbol.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><title>Arkvoid | Worlds with a past</title>
-<script>document.documentElement.classList.add('js')</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171713">
+  <meta name="description" content="Arkvoid is researching a new computing layer for persistent AI worlds: systems where characters remember events, actions change authoritative state, and worlds continue across sessions and devices.">
+  <meta property="og:title" content="Arkvoid Inc. | Worlds with a past">
+  <meta property="og:description" content="The living world is the first experiment. The world engine is the ambition.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/arkvoid-symbol.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/world-citadel.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/world-citadel-mobile.webp" media="(max-width: 760px)" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <title>Arkvoid Inc. | Worlds with a past</title>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-<div class="grain" aria-hidden="true"></div><a class="skip" href="#main">Skip to content</a>
-<header class="nav"><a class="wordmark" href="#top" aria-label="Arkvoid home"><img src="assets/arkvoid-symbol.svg" alt="" width="34" height="34"><span>ARKVOID</span></a><nav id="nav-links"><a href="#world">The world</a><a href="#engine">The engine</a><a href="#research">What we are testing</a><a href="#about">About</a></nav><a class="nav-cta" href="#play">Enter the prototype <span>↗</span></a><button class="menu" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><i></i><i></i></button></header>
-<main id="main">
-<section class="hero" id="top">
-<div class="hero-image" aria-hidden="true"><div class="mountain mountain-back"></div><div class="mountain mountain-mid"></div><div class="mountain mountain-front"></div><div class="sun"></div><div class="mist mist-one"></div><div class="mist mist-two"></div><div class="temple temple-one"><i></i><b></b><em></em></div><div class="temple temple-two"><i></i><b></b><em></em></div><div class="temple temple-three"><i></i><b></b><em></em></div><div class="bridge"></div><div class="hero-person"></div><div class="firefly f1"></div><div class="firefly f2"></div><div class="firefly f3"></div><div class="scene-caption">WORLD 001 <span>THE JADE MOUNTAINS</span></div></div>
-<div class="hero-copy"><p class="overline"><span class="live-dot"></span> A NEW KIND OF DIGITAL WORLD</p><h1>Some worlds<br>should remember<br><em>you were there.</em></h1><p class="hero-text">Meet people who remember you. Make choices that change what happens next. Leave for a while, then return to a world with a past.</p><div class="hero-actions"><a class="primary-button" href="#play">Step into the world <span>↗</span></a><a class="quiet-link" href="#world">Discover Arkvoid <span>↓</span></a></div><div class="hero-note"><span class="note-line"></span> An early experiment in worlds that remember.</div></div>
-<div class="scroll-cue"><span>SCROLL TO EXPLORE</span><i></i></div><div class="hero-index">A / 001</div>
-</section>
-<section class="manifesto section" id="world"><div class="section-head"><span>01 / THE IDEA</span><span>A WORLD WITH A PAST</span></div><div class="manifesto-grid"><h2>Not another chat.<br><em>A place to return to.</em></h2><div class="manifesto-copy"><p class="large">Today's digital worlds often reset the moment you leave. Arkvoid is exploring what happens when they don't.</p><p>Characters keep memories. Friendships can grow. Your choices can change a place. The next time you arrive, yesterday is still part of the story.</p></div></div><div class="story-beats"><article><span>01</span><h3>They remember</h3><p>A character can recall what you said and what you did together.</p></article><article><span>02</span><h3>Your choices stay</h3><p>Help someone, make a promise, change a place. Let it matter later.</p></article><article><span>03</span><h3>Life goes on</h3><p>Characters have plans and routines, even when you are away.</p></article></div></section>
-<section class="experience" id="play"><div class="experience-head"><div><p class="overline">02 / TRY THE IDEA</p><h2>A small world.<br><em>Your first choice.</em></h2></div><p>This is a tiny playable prototype, not the finished Arkvoid world. Explore, meet a traveler, and leave a memory behind.</p></div><div class="game-frame"><div class="game-top"><span><i class="live-dot"></i> JADE MOUNTAINS / FIELD TEST</span><span id="game-time">DAY 01 · 08:40</span></div><div class="game-scene" id="game-scene" tabindex="0" aria-label="Interactive fantasy world. Use the movement buttons to explore."><div class="game-sky"></div><div class="game-moon"></div><div class="game-ridge ridge-a"></div><div class="game-ridge ridge-b"></div><div class="game-ridge ridge-c"></div><div class="game-temple"><i></i><b></b><em></em></div><div class="game-path"></div><div class="game-pine pine-a"></div><div class="game-pine pine-b"></div><div class="game-player" id="game-player"><span></span></div><button class="world-hotspot traveler-hotspot" id="meet-button" aria-label="Talk to the traveler"><span>!</span><small>TRAVELER</small></button><div class="game-location" id="location-name">THE OLD BRIDGE</div><div class="game-hint" id="game-hint">A traveler waits beside the bridge.</div><div class="game-controls"><button data-move="left" aria-label="Move left">←</button><button data-move="forward" aria-label="Move forward">↑</button><button data-move="right" aria-label="Move right">→</button></div><div class="game-legend">MOVE TO EXPLORE <span>•</span> TAP THE ! TO INTERACT</div></div><div class="game-bottom"><div class="game-message"><span class="micro-label">YOUR JOURNAL</span><p id="journal-text">You arrived in the Jade Mountains. The morning mist hides the path ahead.</p></div><div class="game-actions"><button id="rest-button">Rest until tomorrow ↗</button><button id="reset-button">Restart journey ↻</button></div></div></div><p class="prototype-disclaimer">Prototype note: this scene runs entirely in your browser. The traveler and memory are scripted examples, not connected to a live AI system.</p></section>
-<section class="engine section" id="engine"><div class="section-head"><span>03 / HOW IT WORKS</span><span>THE WORLD KEEPS THE RECORD</span></div><div class="manifesto-grid"><h2>AI imagines.<br><em>The world decides.</em></h2><div class="manifesto-copy"><p class="large">An AI can suggest what happens. The world needs a reliable way to decide what actually happened.</p><p>Arkvoid is exploring a system that checks an action against the world's rules, saves the result, and lets future events build on that history.</p></div></div><div class="engine-flow"><article><span>01</span><div><h3>An action is proposed</h3><p>A person or character wants to do something.</p></div><small>INTENT</small></article><article><span>02</span><div><h3>The rules check it</h3><p>The world checks whether the action is allowed.</p></div><small>WORLD RULES</small></article><article class="flow-active"><span>03</span><div><h3>The event is recorded</h3><p>The result becomes part of the world's history.</p></div><small>MEMORY</small></article><article><span>04</span><div><h3>Life responds</h3><p>People and places react to what really happened.</p></div><small>CONSEQUENCES</small></article></div></section>
-<section class="research section" id="research"><div class="section-head"><span>04 / THE WORK AHEAD</span><span>QUESTIONS, NOT CLAIMS</span></div><div class="research-title"><h2>Wonder is the beginning.<br><em>Proof is the work.</em></h2><p>Before Arkvoid can become a platform, the first world must prove three things in repeatable tests.</p></div><div class="research-grid"><article><span>TEST 01</span><h3>Does memory hold?</h3><p>After a restart, does the world still remember the right events and relationships?</p><div class="test-mark">01 <i>Continuity</i></div></article><article><span>TEST 02</span><h3>Does it feel alive?</h3><p>Do characters behave consistently, and is there a reason to return tomorrow?</p><div class="test-mark">02 <i>Experience</i></div></article><article><span>TEST 03</span><h3>Can it run efficiently?</h3><p>Can simple routines use fewer model calls without making the world feel less coherent?</p><div class="test-mark">03 <i>Efficiency</i></div></article></div><p class="research-note">These are open research questions. No performance results or user-retention claims are being made here.</p></section>
-<section class="roadmap section"><div class="section-head"><span>05 / THE PLAN</span><span>ONE STEP AT A TIME</span></div><h2>Build the world.<br><em>Earn the next layer.</em></h2><div class="roadmap-list"><article><span>NOW / 01</span><h3>Make one world work</h3><p>A small place, a few characters, durable memories and rules that can be tested.</p></article><article><span>NEXT / 02</span><h3>Prove it survives</h3><p>Test memory, character consistency, safety, return visits and operating cost.</p></article><article><span>LATER / 03</span><h3>Make it reusable</h3><p>If the evidence is strong, let other creators build worlds on the same foundation.</p></article></div></section>
-<section class="about section" id="about"><div class="about-mark"><img src="assets/arkvoid-symbol.svg" alt="" width="76" height="76"><span>INDEPENDENT RESEARCH & DEVELOPMENT</span></div><div class="about-copy"><p class="overline">THE FOUNDER</p><h2>Manish Talukdar</h2><p class="role">Founder, Arkvoid Inc.</p><p class="about-statement">The long-term ambition is a new layer of computing. The first job is smaller: make one world remember correctly, behave coherently, and give people a reason to return.</p><div class="contact-links"><a href="https://x.com/ArkvoidAI" target="_blank" rel="noreferrer">Follow @ArkvoidAI on X ↗</a><a href="mailto:heyarkvoid@gmail.com">heyarkvoid@gmail.com ↗</a></div></div></section>
-</main><footer><a class="wordmark" href="#top"><img src="assets/arkvoid-symbol.svg" alt="" width="28" height="28"><span>ARKVOID</span></a><span>Arkvoid Inc.</span><span>Worlds with a past.</span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer><script src="script.js" defer></script></body></html>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Arkvoid home">
+      <img src="assets/arkvoid-symbol.svg" width="38" height="38" alt="">
+      <span>ARKVOID</span>
+    </a>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#vision">Vision</a>
+      <a href="#world">The world</a>
+      <a href="#engine">The engine</a>
+      <a href="#research">Research</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+    <a class="header-link" href="#prototype">Explore the prototype <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-image" aria-hidden="true">
+        <source media="(max-width: 760px)" srcset="assets/world-citadel-mobile.webp" type="image/webp">
+        <img src="assets/world-citadel.webp" alt="" fetchpriority="high" decoding="async" width="1400" height="787">
+      </picture>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-coordinate coord-top">ARKVOID / WORLD STUDY 001</div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal-dot"></span> PERSISTENT EMBODIED WORLD COMPUTING <span class="eyebrow-rule">/</span> OCT 2026</p>
+        <h1 id="hero-title">A world that remembers.<br><em>A system that makes it real.</em></h1>
+        <p class="hero-lede">Arkvoid is building toward a new layer of computing: digital worlds where inhabitants remember what happened, choices change the world, and history survives after you leave.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#prototype">Explore the world <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#engine">Understand the technology <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-footnote"><span class="footnote-line"></span><span>The first world is the proof. The engine is the ambition.</span></div>
+      </div>
+      <div class="hero-side-note"><span>01 / 03</span><span>THE LIVING WORLD</span><i></i></div>
+      <a class="scroll-cue" href="#vision"><span>SCROLL TO ENTER</span><i aria-hidden="true"></i></a>
+      <div class="hero-image-caption"><span>CONCEPT ART</span><span>THE WORLD IS A RESEARCH DIRECTION, NOT A SHIPPED PRODUCT</span></div>
+    </section>
+
+    <section class="thesis section-light" id="vision" aria-labelledby="vision-title">
+      <div class="section-topline reveal"><span>01 / THE VISION</span><span>FROM SESSIONS TO ENVIRONMENTS</span></div>
+      <div class="thesis-grid">
+        <div class="thesis-head reveal">
+          <p class="overline overline-dark">A DIFFERENT UNIT OF COMPUTING</p>
+          <h2 id="vision-title">Not another app to open.<br><em>A place that carries its past.</em></h2>
+        </div>
+        <div class="thesis-copy reveal">
+          <p class="lead">Today's digital experiences often stop at the edge of a session. Arkvoid is exploring software that behaves more like an environment.</p>
+          <p>Its inhabitants have stable identities, changing relationships, active goals and memories tied to events. The world owns the record of what actually happened. On your next visit, people and places can respond to that history.</p>
+          <p>This is a proposed research direction, not an established industry category or a claim that the problem is solved.</p>
+        </div>
+      </div>
+      <div class="principle-line reveal"><span class="principle-code">A / 01</span><p>AI can imagine the next moment.<br><strong>The world engine must preserve what actually happened.</strong></p><span class="principle-mark" aria-hidden="true"><i></i><i></i><i></i></span></div>
+      <div class="three-promises">
+        <article class="promise reveal"><span>01</span><h3>Memory with evidence</h3><p>Characters recall events that happened, with a source they can point back to.</p></article>
+        <article class="promise reveal"><span>02</span><h3>Choices with consequences</h3><p>Inventory, relationships, places and goals change only through validated actions.</p></article>
+        <article class="promise reveal"><span>03</span><h3>Continuity across time</h3><p>Routines continue while you are away, then reconcile before you return.</p></article>
+      </div>
+    </section>
+
+    <section class="world-section" id="world" aria-labelledby="world-title">
+      <div class="world-image-wrap">
+        <img class="world-image parallax-image" src="assets/world-courtyard.webp" alt="Concept art of an inhabited cultivation sect courtyard, with disciples training, studying a letter, working with herbs and talking under lantern light" loading="lazy" decoding="async" width="1400" height="787">
+        <div class="world-image-gradient" aria-hidden="true"></div>
+        <div class="world-image-label"><span>WORLD 001</span><span>THE SECT COURTYARD</span></div>
+        <div class="world-image-bottom"><span>ONE PLACE. FIVE TO TEN INHABITANTS.</span><span>AN INTENTIONAL FIRST SCOPE</span></div>
+      </div>
+      <div class="world-intro section-light">
+        <div class="section-topline reveal"><span>02 / THE FIRST EXPERIENCE</span><span>THE EMOTIONAL WEDGE</span></div>
+        <div class="world-intro-grid">
+          <h2 id="world-title" class="reveal">The living world.<br><em>Worth coming back to.</em></h2>
+          <div class="world-copy reveal">
+            <p class="lead">The first product is a browser-accessible cultivation world. Not because Arkvoid is only a game company, but because a living world makes continuity visible.</p>
+            <p>Enter a sect courtyard. Speak with five to ten named inhabitants. Ask for guidance, train, inspect an object or investigate a clue. Change a relationship or uncover a secret. Leave, return, and test whether the world can explain what changed.</p>
+          </div>
+        </div>
+        <div class="experience-contract">
+          <div><span>THE INHABITANTS</span><strong>Identity, traits, schedules, goals</strong></div>
+          <div><span>THE MEMORY</span><strong>Events, source IDs, confidence</strong></div>
+          <div><span>THE WORLD</span><strong>Authoritative state and rules</strong></div>
+          <div><span>THE NARRATIVE</span><strong>AI proposes, never rewrites canon</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prototype-section" id="prototype" aria-labelledby="prototype-title">
+      <div class="section-topline section-topline-dark reveal"><span>03 / INTERACTIVE SYSTEM STUDY</span><span>A SCRIPTED PROTOTYPE</span></div>
+      <div class="prototype-intro reveal">
+        <div><p class="overline">SEE A WORLD EVENT HAPPEN</p><h2 id="prototype-title">The world remembers<br><em>because its state is real.</em></h2></div>
+        <div><p class="lead">Try a few actions in a small simulation of the proposed runtime. Proposals are checked against rules. Approved actions update the local state and event journal; rejected actions do not.</p><p class="prototype-warning">This is a front-end systems demo using scripted responses. It does not call an AI model or a backend.</p></div>
+      </div>
+
+      <div class="world-console reveal">
+        <div class="console-bar"><div class="console-brand"><span class="console-light"></span> ARKVOID WORLD RUNTIME <span class="console-muted">/ LOCAL SANDBOX</span></div><div class="console-world">JADE SECT <span>•</span> CYCLE 001</div></div>
+        <div class="console-grid">
+          <div class="console-scene">
+            <img src="assets/world-courtyard.webp" alt="Cultivation sect courtyard concept art inside the interactive world prototype" loading="lazy" decoding="async" width="1400" height="787">
+            <div class="scene-overlay"></div>
+            <div class="scene-top"><span>SECT COURTYARD</span><span>WEATHER / LIGHT RAIN</span></div>
+            <div class="scene-person scene-person-lian"><span>LIAN</span><i></i></div>
+            <div class="scene-person scene-person-wen"><span>ELDER WEN</span><i></i></div>
+            <div class="scene-bottom"><span id="scene-time">DAY 01 / MORNING</span><strong id="scene-event">The courtyard is quiet after rain.</strong></div>
+          </div>
+          <aside class="console-panel" aria-label="World state controls">
+            <div class="panel-heading"><div><span class="micro-label">WORLD INSTANCE</span><h3>Jade Sect <span class="state-dot"></span></h3></div><span class="world-id">WRLD / 001</span></div>
+            <div class="state-overview"><div><span>WORLD DAY</span><strong id="world-day">01</strong></div><div><span>COMMITTED EVENTS</span><strong id="event-count">0042</strong></div><div><span>INHABITANTS</span><strong>05</strong></div></div>
+            <div class="character-select"><span class="micro-label">SELECT AN INHABITANT</span><div class="character-tabs" role="group" aria-label="Choose an inhabitant"><button class="character-tab is-active" data-character="lian" aria-pressed="true"><span class="avatar avatar-red">L</span><span><strong>Lian Chen</strong><small>Disciple · Curious</small></span></button><button class="character-tab" data-character="wen" aria-pressed="false"><span class="avatar avatar-gold">W</span><span><strong>Elder Wen</strong><small>Keeper · Watchful</small></span></button><button class="character-tab" data-character="kai" aria-pressed="false"><span class="avatar avatar-blue">K</span><span><strong>Kai Ren</strong><small>Herbalist · Patient</small></span></button></div></div>
+            <div class="character-state"><div class="state-head"><span class="micro-label">GROUNDED MEMORY</span><span class="verified"><i></i> SOURCE LINKED</span></div><p id="character-memory">No personal event has been recorded for this visitor yet.</p><div class="character-facts"><div><span>RELATIONSHIP</span><strong id="relationship-state">Unfamiliar</strong></div><div><span>ACTIVE GOAL</span><strong id="goal-state">Deliver a sealed letter</strong></div></div></div>
+            <div class="action-area"><span class="micro-label">PROPOSE AN ACTION</span><button class="world-action world-action-time" id="advance-day" type="button">Advance world by one day <span>↗</span></button><div class="action-list"><button class="world-action" data-action="ask"><span class="action-copy" id="ask-action-label">Ask about the letter</span><span aria-hidden="true">↗</span></button><button class="world-action" data-action="help"><span class="action-copy" id="help-action-label">Offer a healing herb to Kai Ren</span><span aria-hidden="true">↗</span></button><button class="world-action" data-action="inspect">Inspect the sealed archive <span>↗</span></button><button class="world-action action-danger" data-action="take">Take the forbidden relic <span>↗</span></button></div></div>
+            <div class="commit-status" id="commit-status" role="status" aria-live="polite"><span class="status-symbol">✓</span><div><strong>Runtime ready</strong><small>Waiting for a proposed action.</small></div></div>
+          </aside>
+        </div>
+        <div class="event-journal"><div class="journal-head"><div><span class="micro-label">AUTHORITATIVE EVENT LEDGER</span><h3>What actually happened</h3></div><button id="reset-world" class="reset-button" type="button">Reset sandbox ↻</button></div><div id="event-list" class="event-list" aria-live="polite"><div class="event-row"><span class="event-number">EVT / 0042</span><span class="event-mark event-ok">COMMITTED</span><p>World instance initialised. The starting state is ready for actions.</p></div></div></div>
+      </div>
+      <p class="prototype-footnote">Sandbox scope: this demo state is stored only in this browser. It illustrates the command-validation contract; it is not evidence that the persistent runtime has been implemented.</p>
+    </section>
+
+    <section class="engine-section section-light" id="engine" aria-labelledby="engine-title">
+      <div class="section-topline reveal"><span>04 / THE ENGINE</span><span>NOT A MONOLITHIC MODEL</span></div>
+      <div class="engine-heading">
+        <h2 id="engine-title" class="reveal">AI proposes.<br><em>The world decides.</em></h2>
+        <p class="lead reveal">The central rule is simple: a model can propose dialogue or an action, but it cannot directly change canonical world state, ownership or inventory.</p>
+      </div>
+      <div class="architecture reveal" aria-label="Proposed Arkvoid world engine architecture">
+        <div class="architecture-header"><span>PROPOSED RUNTIME / COMMAND PATH</span><span><i></i> WORLD AUTHORITY</span></div>
+        <div class="architecture-node"><span class="architecture-num">01</span><div><h3>Device and input</h3><p>Browser, phone, controller, voice or XR</p></div><span class="node-tag">PERCEPTION</span></div>
+        <div class="architecture-connector"><span></span><p>Intent or action proposal</p><i></i></div>
+        <div class="architecture-node"><span class="architecture-num">02</span><div><h3>AI runtime</h3><p>Character goals, grounded recall, planning</p></div><span class="node-tag">PROBABILISTIC</span></div>
+        <div class="architecture-connector"><span></span><p>Typed command and preconditions</p><i></i></div>
+        <div class="architecture-node node-authority"><span class="architecture-num">03</span><div><h3>World authority</h3><p>Validate permissions, rules and state transitions</p></div><span class="node-tag">DETERMINISTIC</span></div>
+        <div class="architecture-connector"><span></span><p>Accepted event or explicit rejection</p><i></i></div>
+        <div class="architecture-node"><span class="architecture-num">04</span><div><h3>Event ledger and memory</h3><p>Append history, update state, preserve source evidence</p></div><span class="node-tag">DURABLE STATE</span></div>
+        <div class="architecture-connector"><span></span><p>New state and next observation</p><i></i></div>
+        <div class="architecture-node"><span class="architecture-num">05</span><div><h3>World and inhabitants</h3><p>Consequences continue and become the next experience</p></div><span class="node-tag">EXPERIENCE</span></div>
+        <div class="architecture-footer"><span>MODEL-AGNOSTIC INTERFACES</span><span>REPLAYABLE EVENTS</span><span>RECOVERY-SAFE ACTIONS</span></div>
+      </div>
+      <div class="engine-primitives">
+        <article class="primitive reveal"><span>01 / RECORD</span><h3>Event journal</h3><p>An append-only record of actions and outcomes. State can be checked against its history.</p></article>
+        <article class="primitive reveal"><span>02 / RECALL</span><h3>Grounded memory</h3><p>Separate episodic facts, relationship summaries, stable traits, current goals and uncertain beliefs. Keep the source event for each fact.</p></article>
+        <article class="primitive reveal"><span>03 / VALIDATE</span><h3>World authority</h3><p>Typed commands, preconditions, permissions, idempotency and deterministic state changes. Models never silently rewrite canon.</p></article>
+        <article class="primitive reveal"><span>04 / CONTINUE</span><h3>Agent lifecycle</h3><p>Observe, recall, decide, propose, validate, commit, then sleep and resume with schedules and safe recovery.</p></article>
+      </div>
+    </section>
+
+    <section class="research-section" id="research" aria-labelledby="research-title">
+      <div class="section-topline section-topline-dark reveal"><span>05 / RESEARCH PROGRAMME</span><span>HYPOTHESES TO TEST / NOT RESULTS</span></div>
+      <div class="research-heading reveal"><div><p class="overline">WHERE A DIFFERENCE COULD EMERGE</p><h2 id="research-title">Make the hard parts<br><em>measurable.</em></h2></div><p>ARKVOID should not claim that AI memory, world generation or agent compilation are new by themselves. The question is whether the pieces can work together with stronger correctness and lower cost.</p></div>
+      <div class="research-grid">
+        <article class="research-card reveal"><span class="research-index">R / 01</span><div class="research-icon icon-memory">↻</div><h3>Persistent agent runtime</h3><p>Keep identity, memory, relationships and goals coherent across sessions, interruptions and model-provider changes.</p><div class="research-metric"><span>PROPOSED EXIT TARGET</span><strong>≥95%</strong><small>state-fact correctness on a fixed test set, with no invented canonical events.</small></div></article>
+        <article class="research-card reveal"><span class="research-index">R / 02</span><div class="research-icon icon-execution">⌘</div><h3>Crystallizing execution</h3><p>Turn verified recurring world routines into bounded execution paths, and fall back to reasoning when the state changes.</p><div class="research-metric"><span>PROPOSED EXIT TARGET</span><strong>−40% / −50%</strong><small>p95 latency and model calls on eligible repeated routines.</small></div><p class="prior-art">Broad agent JIT compilation is already researched. Any distinction must be world-specific and measured against strong baselines.</p></article>
+        <article class="research-card reveal"><span class="research-index">R / 03</span><div class="research-icon icon-simulation">≈</div><h3>Sparse world simulation</h3><p>Use fixed rules for quiet activity and reserve deeper model reasoning for novelty, conflict and meaningful choices.</p><div class="research-metric"><span>PROPOSED EXIT TARGET</span><strong>−70%</strong><small>background simulation cost without a material rise in perceived contradictions.</small></div></article>
+        <article class="research-card reveal"><span class="research-index">R / 04</span><div class="research-icon icon-device">⌗</div><h3>Device-independent runtime</h3><p>Keep world IDs, events, goals and permissions stable while the input and rendering adapt to browser, phone or XR.</p><div class="research-metric"><span>GATE</span><strong>Prove need first</strong><small>Test on existing devices. Hardware is a conditional long-term option.</small></div></article>
+      </div>
+      <p class="research-disclaimer reveal">Every metric above is a proposed research exit target from the October 2026 dossier, not a measured result or a shipped capability. Targets require fixed test conditions, baselines and reproducible logs.</p>
+    </section>
+
+    <section class="landscape-section section-light" aria-labelledby="landscape-title">
+      <div class="section-topline reveal"><span>06 / THE LANDSCAPE</span><span>COMPLEMENTARY BEFORE COMPETITIVE</span></div>
+      <div class="landscape-heading reveal"><h2 id="landscape-title">Different systems solve<br><em>different parts of the problem.</em></h2><p>Arkvoid is not building a new foundation model or another 3D engine. The opportunity, if evidence supports it, is a world runtime that connects generation, agents and authoritative state.</p></div>
+      <div class="landscape-list">
+        <article class="landscape-row reveal"><div><span>WORLD GENERATION</span><h3><a href="https://deepmind.google/models/genie/" target="_blank" rel="noopener noreferrer">Genie 3 <span>↗</span></a> · <a href="https://www.worldlabs.ai/blog/marble-world-model" target="_blank" rel="noopener noreferrer">Marble <span>↗</span></a></h3></div><p>Create and explore generated worlds. Generation alone does not settle long-lived identity, multi-agent relationships, ownership or event recovery.</p></article>
+        <article class="landscape-row reveal"><div><span>AGENT CONTROL</span><h3><a href="https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/" target="_blank" rel="noopener noreferrer">SIMA 2 <span>↗</span></a></h3></div><p>AI agents can understand instructions and act in virtual environments. Arkvoid still needs to prove reliable persistent state around actions and memories.</p></article>
+        <article class="landscape-row reveal"><div><span>RENDERING & SIMULATION</span><h3>Unreal · Unity · NVIDIA</h3></div><p>Mature engines and infrastructure should be used where they help. Arkvoid’s hypothesised layer is world-state semantics, character lifecycle, evaluation and cost control.</p></article>
+        <article class="landscape-row landscape-row-arkvoid reveal"><div><span>ARKVOID / THE OPEN QUESTION</span><h3>A world engine</h3></div><p>Can authoritative events, grounded memory and sparse simulation create a world that is more coherent and cheaper to operate than a well-engineered integration of existing tools?</p></article>
+      </div>
+      <p class="landscape-footnote">This is a product and research comparison, not a claim that Arkvoid currently outperforms these systems. See the <a href="https://deepmind.google/research/" target="_blank" rel="noopener noreferrer">DeepMind research overview ↗</a> and <a href="https://www.worldlabs.ai/" target="_blank" rel="noopener noreferrer">World Labs ↗</a>.</p>
+    </section>
+
+    <section class="strategy-section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="section-topline section-topline-dark reveal"><span>07 / EXECUTION</span><span>GATES, NOT PROMISES</span></div>
+      <div class="strategy-heading reveal"><h2 id="roadmap-title">Start with a world.<br><em>Earn the platform.</em></h2><p>The world is the first emotional test. The engine is the reusable technical asset. A broader computing platform is a later option, unlocked by evidence.</p></div>
+      <div class="strategy-columns">
+        <article class="strategy-card strategy-current reveal"><span>01 / NOW</span><h3>The living world</h3><p>One sect courtyard, five to ten inhabitants, meaningful actions, grounded memory and persistent state.</p><small>PROOF: STATE SURVIVES LEAVING AND RETURNING</small></article>
+        <article class="strategy-card reveal"><span>02 / NEXT</span><h3>The world engine</h3><p>A reusable runtime for event history, character lifecycle, deterministic transitions, simulation tiers and evaluation.</p><small>PROOF: REPEATABLE CORRECTNESS AND COST ADVANTAGE</small></article>
+        <article class="strategy-card reveal"><span>03 / LATER</span><h3>The computing platform</h3><p>Versioned interfaces and APIs across browser, phone and XR. Hardware only if existing devices leave a proven user need.</p><small>PROOF: OUTSIDE DEVELOPERS SUCCEED INDEPENDENTLY</small></article>
+      </div>
+      <div class="roadmap-detail-list">
+        <div class="roadmap-title-row"><span>PHASE</span><span>BUILD</span><span>GATE TO ADVANCE</span></div>
+        <article class="roadmap-row reveal"><span>00 / WEEKS 1–2</span><h3>Specify</h3><p>Freeze one location, character rules, event schema and an evaluation suite.</p><strong>One executable milestone</strong></article>
+        <article class="roadmap-row reveal"><span>01 / WEEKS 3–8</span><h3>Persist</h3><p>Build the browser world, grounded memory, routines, event log and restart recovery.</p><strong>World state survives restart</strong></article>
+        <article class="roadmap-row reveal"><span>02 / MONTHS 3–4</span><h3>Measure</h3><p>Compare transcript-only, summary and event-grounded memory against explicit baselines.</p><strong>Repeatable benchmark win</strong></article>
+        <article class="roadmap-row reveal"><span>03 / MONTHS 4–6</span><h3>Embody</h3><p>Try a richer scene on existing XR hardware only if browser retention shows value.</p><strong>Immersion adds measurable value</strong></article>
+        <article class="roadmap-row reveal"><span>04 / MONTHS 6–12</span><h3>Validate</h3><p>Run 10–20 design partners, observe unaided return visits, trust, safety and cost per active hour.</p><strong>Evidence of durable demand</strong></article>
+        <article class="roadmap-row reveal"><span>05 / MONTHS 12–24+</span><h3>Platform</h3><p>Offer APIs, SDKs, sample worlds, metering and developer documentation only after third-party success.</p><strong>Developers succeed without bespoke support</strong></article>
+      </div>
+      <div class="stop-rule reveal"><span>THE STOP RULE</span><p>If the experience is only novel, narrow the thesis. If user value and technical advantage improve together, earn the next phase.</p></div>
+    </section>
+
+    <section class="go-to-market section-light" aria-labelledby="market-title">
+      <div class="section-topline reveal"><span>08 / WHO IT STARTS WITH</span><span>DESIRE BEFORE SCALE</span></div>
+      <div class="market-grid">
+        <div class="reveal"><h2 id="market-title">Find the people<br><em>who want to return.</em></h2><p class="lead">The first audience is concentrated, not universal: cultivation-fiction and persistent-roleplay enthusiasts who care whether a character remembers a meaningful choice.</p></div>
+        <div class="market-steps reveal"><article><span>01</span><div><h3>10–20 design partners</h3><p>Observe people using the same memory-dependent interactions more than once.</p></div></article><article><span>02</span><div><h3>A closed test</h3><p>Measure first-session activation, seven-day return, meaningful actions, contradictions and resets.</p></div></article><article><span>03</span><div><h3>A paid signal</h3><p>Only after users experience durable consequences, test premium access and willingness to pay.</p></div></article><article><span>04</span><div><h3>Then developers</h3><p>Ask outside creators to build on the engine once it solves a problem they cannot easily solve alone.</p></div></article></div>
+      </div>
+      <div class="market-signal reveal"><div><span>ADJACENT MARKET SIGNAL</span><strong>$201.6B</strong><p>Estimated global games revenue, 2025. Context only, not Arkvoid’s addressable market.</p><a href="https://newzoo.com/" target="_blank" rel="noopener noreferrer">Newzoo ↗</a></div><div><span>DEVICE MOMENTUM</span><strong>35.3%</strong><p>Reported year-over-year growth in combined XR headset / glasses shipments in Q2 2026.</p><a href="https://www.idc.com/" target="_blank" rel="noopener noreferrer">IDC ↗</a></div><p class="market-caveat">Market figures are reproduced from the strategy dossier as context, not independently verified live estimates. They are not Arkvoid TAM.</p></div>
+    </section>
+
+    <section class="founder-section" id="about" aria-labelledby="founder-title">
+      <div class="founder-art"><img src="assets/world-citadel.webp" alt="A distant cultivation city suspended above a cloud-filled valley" loading="lazy" decoding="async" width="1400" height="787"><div></div></div>
+      <div class="founder-copy section-light reveal"><p class="overline overline-dark">AN INDEPENDENT COMPUTING THESIS</p><h2 id="founder-title">Build the proof<br>before the platform.</h2><p>The ambition is a new layer of computing. The first responsibility is smaller: make one world remember correctly, behave coherently, and give people a reason to return.</p><div class="founder-name"><span>FOUNDER</span><strong>Manish Talukdar</strong></div><div class="contact-row"><a href="https://x.com/ArkvoidAI" target="_blank" rel="noopener noreferrer">X / @ArkvoidAI <span>↗</span></a><a href="mailto:heyarkvoid@gmail.com">heyarkvoid@gmail.com <span>↗</span></a></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><img src="assets/arkvoid-symbol.svg" width="30" height="30" alt=""><span>ARKVOID</span></a><span class="company-name">Arkvoid Inc.</span><p>Persistent AI worlds · Embodied interaction · Spatial computing</p><span class="footer-note">RESEARCH HYPOTHESES ARE NOT SHIPPED CAPABILITIES</span><a class="back-top" href="#top">BACK TO TOP ↑</a></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
