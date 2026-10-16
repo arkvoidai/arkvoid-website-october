@@ -1,26 +1,42 @@
-# Arkvoid Inc. | Worlds with a past
+# Arkvoid — Matrix Computing World
 
-Arkvoid is exploring digital worlds where characters can remember events, choices have consequences, and the world keeps a reliable history.
+This repository is the **world application**, not the Arkvoid marketing website. It is designed to be deployed as a standalone Next.js application at **app.arkvoid.com**.
 
-This website is a responsive, cinematic landing page and a small playable browser prototype.
+## Included in this vertical slice
 
-## What is included
-- **World-first art direction:** charcoal, weathered parchment, muted iron-red and warm stone, with layered CSS landscape art and slow ambient motion.
-- **A playable prototype:** move through the Jade Mountains, meet a traveler, and return after resting. The small interaction is scripted and runs locally in the browser.
-- **Plain-language product explanation:** what Arkvoid is exploring, how the proposed world engine could work, research questions, and conditional next steps.
-- **Responsive design:** mobile navigation, fluid type and spacing, touch controls, and a compact mobile layout.
-- **Accessibility:** keyboard movement in the prototype, focus states, skip link and reduced-motion support.
-- **Updated emblem:** minimal threshold symbol.
+- Real-time 3D cultivation-inspired environment with a sect courtyard, mountain forms, paths, trees, stones and inhabitants.
+- Keyboard/mouse movement and touch controls.
+- A deterministic world-state boundary: actions are validated before the event journal or player progression changes.
+- Named inhabitants with individual dialogue and memory records.
+- Discovery and cultivation progression, bounded local save/restore, and responsive HUD.
+- Unit tests covering world-action rules and state continuity.
 
-## Run locally
-Open `index.html` in a modern browser. No build step, external font, game engine, backend, or third-party runtime dependency is required.
+## Local development
 
-## Deploy to Vercel
-Import this repository into Vercel. Use the Other framework preset, leave the build command empty, and serve the repository root. This is a static HTML/CSS/JS site. Keep `assets/` alongside `index.html`.
+Requires Node.js 20.9+ and npm.
 
-## Contact
-- X: [@ArkvoidAI](https://x.com/ArkvoidAI)
-- Email: heyarkvoid@gmail.com
+```sh
+npm install
+npm run dev
+npm test
+npm run typecheck
+npm run build
+```
 
-## Honest product status
-The browser prototype is a scripted concept, not a live AI world. Research items are questions to test, not performance results. Future engine/platform plans depend on evidence from the first experiment.
+## Deploy to app.arkvoid.com
+
+Create a separate Vercel project for this repository. Select the repository root and the **Next.js** framework preset. Use `npm install` for installation and `npm run build` for the build command; let Next.js manage its output directory. Add `app.arkvoid.com` under the Vercel project's Domains settings and follow the DNS instructions displayed there.
+
+Opening this PR does not attach the Vercel project, configure the domain, or edit DNS.
+
+## Engineering scope and limitations
+
+This is an early local-first world prototype, not a shipped Matrix OS, multiplayer service, or hosted persistent civilization. Save data is device-local and cannot be treated as authoritative against a modified client. Dialogue is scripted; no hosted model is called. The inhabitants use prototype meshes rather than final cinematic assets and rigged characters. Server-authoritative shared state, remote persistence, cross-device identity, production telemetry, performance budgets, and licensed optimized art remain future work.
+
+## Runtime organization
+
+- `src/engine/runtime.ts`: deterministic world state and validated action transitions.
+- `src/engine/input.ts`: device-neutral movement input.
+- `src/components/WorldCanvas.tsx`: rendering and embodied movement.
+- `src/components/WorldApp.tsx`: HUD, dialogue, save and action flow.
+- `src/app`: Next.js application shell.
