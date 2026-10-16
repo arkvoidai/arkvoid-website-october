@@ -96,7 +96,7 @@ function Walker({ selected, onSelect, onDiscover }: { selected: InhabitantId; on
     if (['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright','shift','e'].includes(k)) e.preventDefault();
     inputState.held.add(k);
   }, []);
-  const onKeyUp = useCallback((e: KeyboardEvent) => inputState.held.delete(e.key.toLowerCase()), []);
+  const onKeyUp = useCallback((e: KeyboardEvent): void => { inputState.held.delete(e.key.toLowerCase()); }, []);
   useEffect(() => {
     const canvas = document.querySelector('.world-canvas canvas');
     if (!canvas) return;
